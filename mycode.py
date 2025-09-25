@@ -6,6 +6,10 @@ data={'Name':['Alice', 'Bob', 'Charlie'],
       'City':['New York', 'Los Angeles', 'Chicago']
       }
 df=pd.DataFrame(data)
+
+new_row_loc={'Name':'gf1','Age':40,'City':'city1'}
+df.loc[len(df.index)]=new_row_loc
+
 data_dir="data"
 os.makedirs(data_dir, exist_ok=True)
 file_path=os.path.join(data_dir, "sample_data.csv")
