@@ -13,3 +13,8 @@
 13. Again "python -m dvc commit" and then "dvc push"
 14. check dvs/git status, everything should be updated
 15. Now repeat step- 12-14 for v3 of data.
+
+
+git log --oneline
+git checkout <hash> - git checkout master
+dvc pull
